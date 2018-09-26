@@ -19,7 +19,7 @@ def select_youngest_bear_and_returns_name_and_age
 end
 
 def selects_most_prominent_color_and_returns_with_count
-  "SELECT name,MAX(color) FROM bears"
+  "SELECT COUNT(MAX(color)) FROM bears"
   #{}"SELECT MAX(color) AS common_color FROM bears"
   #{}"SELECT name,COUNT(name) WHERE color = common_color"
 end
